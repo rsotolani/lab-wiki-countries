@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  /*text-align: center;*/
 }
 
 .App-logo {
@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+.line {
+  border-bottom: 1px solid rgb(198, 194, 194);
+}
+
+.tabela {
+  width: 100%;
+}
+
+.td {
+  vertical-align: top;
+  padding: 10px;
+}
+
+

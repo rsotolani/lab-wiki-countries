@@ -15,13 +15,17 @@ function App() {
     <div className="App">
 
       <NavBar />
+
+      <div className="container">
+        <div className="row">
+          <CountriesList allCountries={countries}/>
+          <Routes>
+            <Route path="/:alpha3Code" element={ <CountryDetails allCountries={countries} />     } />
+          </Routes>
+        </div>
+      </div>
       
-      <Routes>
-        <Route path="/" element={ <CountriesList allCountries={countries} />    } />
-
-        <Route path="/:alpha3Code" element={ <CountryDetails allCountries={countries} />     } />
-
-      </Routes>
+      
 
     </div>
   );
