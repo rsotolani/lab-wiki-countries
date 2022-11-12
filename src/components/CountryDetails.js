@@ -24,12 +24,12 @@ function CountryDetails( {allCountries}) {
 
     return ( 
         <div className="col-7">
-            <h1 className="line">
             <img 
-                src={`https://flagpedia.net/data/flags/icon/72x54/${countrySelected.alpha2Code.toLowerCase()}.png`} 
+                src={`https://flagcdn.com/128x96/${countrySelected.alpha2Code.toLowerCase()}.png`} 
                 alt={`flag of ${countrySelected.name.common}`} 
-                width='40px'
-                /> &#160;
+                className="center"
+                />
+            <h1 className="line center">
                 {countrySelected.name.common}
             </h1>
             <table className="tabela">
